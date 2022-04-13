@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;700&display=swap');
+
+body{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+
+h1, h3, h4 {
+    color: rgb(90, 90, 90);
+}
+
+h4 {
+    font-style: italic;
+    width: 80%;
+}
+
+.talk {
+    padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(129, 129, 129);
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 10px 10px rgb(90, 90, 90);
+  cursor: pointer;
+}
+  .talk::before {
+    content: "";
+    background-color: rgba(52, 140, 154, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  .talk:hover {
+    background-color: rgba(52, 140, 154, 0.5);
+    color: #fff;
+   } 
+
+   .talk:hover::before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+    }
+
+    
+
+
+.content {
+    text-transform: capitalize;
+}
+
+.weather {
+    margin-top: 300px;
+}
+
+.weatherContent {
+    width: 100%;
+    height: 10vh;
+    background-color: aqua;
+}
+
+
+@media screen and (min-width: 1050px){
+ h4 {
+     width: 50%
+ }   
+}
